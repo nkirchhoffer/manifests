@@ -8,3 +8,8 @@ image:
 - name: nginx
   newName: nginx
   newTag: 1.30.4
+
+configMapGenerator:
+- name: nginx-config
+  files:
+  - nginx.conf
