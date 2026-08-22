@@ -1,0 +1,10 @@
+resources:
+- ../../base
+
+patches:
+- path: patch/deployment.yaml
+
+image:
+- name: nginx
+  newName: nginx
+  newTag: 1.30.4

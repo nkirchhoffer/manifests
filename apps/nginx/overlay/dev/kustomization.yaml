@@ -1,0 +1,12 @@
+resources:
+- ../../base
+
+images:
+- name: nginx
+  newName: nginx
+  newTag: 1.31.4
+
+configMapGenerator:
+- name: nginx-config
+  files:
+  - nginx.conf
