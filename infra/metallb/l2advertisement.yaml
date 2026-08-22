@@ -4,4 +4,4 @@ metadata:
   name: advertisement
 spec:
   ipAddressPools:
-  - name: egress
+  - egress
