@@ -4,7 +4,7 @@ resources:
 patches:
 - path: patch/deployment.yaml
 
-image:
+images:
 - name: nginx
   newName: nginx
   newTag: 1.30.4
