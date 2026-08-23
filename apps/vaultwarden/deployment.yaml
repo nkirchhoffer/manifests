@@ -18,7 +18,7 @@ spec:
         - containerPort: 80
         env:
         - name: DOMAIN
-          value: vault.internal.clebard.cloud
+          value: https://vault.nkir.ch 
         volumeMounts:
         - name: vault-data
           mountPath: /data
