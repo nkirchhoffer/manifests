@@ -1,0 +1,9 @@
+resources:
+- deployment.yaml
+- pvc.yaml
+- service.yaml
+
+images:
+- name: vaultwarden
+  newName: vaultwarden/server
+  newTag: 1.37.2-alpine

@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vaultwarden
+spec:
+  selector:
+    matchLabels:
+      app: vaultwarden
+  template:
+    metadata:
+      labels:
+        app: vaultwarden
+    spec:
+      containers:
+      - name: vaultwarden
+        image: vaultwarden
+        ports:
+        - containerPort: 80
+        env:
+        - name: DOMAIN
+          value: vault.internal.clebard.cloud
+        volumeMounts:
+        - name: vault-data
+          mountPath: /data
+      volumes:
+      - name: vault-data
+        persistentVolumeClaim:
+          claimName: vault-data

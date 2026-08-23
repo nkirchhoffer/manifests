@@ -13,3 +13,6 @@ configMapGenerator:
 - name: nginx-config
   files:
   - nginx.conf
+- name: nginx-env-vars
+  envs:
+  - config.env
